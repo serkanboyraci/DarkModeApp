@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //4
-        overrideUserInterfaceStyle = .light // you can use only dark or light mode in your VC, nobody can change it. only this VC.
+        //overrideUserInterfaceStyle = .light // you can use only dark or light mode in your VC, nobody can change it. only this VC.
         
         
         //1
@@ -32,7 +32,7 @@ class ViewController: UIViewController {
             
         } */
     }
-    
+    /*
     //2
     override func viewWillAppear(_ animated: Bool) {
         
@@ -47,9 +47,10 @@ class ViewController: UIViewController {
             
         }
     }
+    */
     
     //3
-    // using app, it changes dark/light mode easily.
+    // using app, it changes dark/light mode easily. // best method
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
         let userInterfaceStyle = traitCollection.userInterfaceStyle
         
